@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghost - 습관형성</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <h1>Ghost</h1>
+            </div>
+            <nav class="nav-menu">
+                <a href="#habits" class="nav-item">나의 습관</a>
+                <a href="#statistics" class="nav-item">통계</a>
+                <a href="#community" class="nav-item">커뮤니티</a>
+            </nav>
+            <div class="auth-buttons">
+                <button class="btn-login" id="loginBtn">로그인하기</button>
+                <button class="btn-signup" id="signupBtn">회원가입</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-container">
+                <h2 class="hero-title">나만의 습관을 만들어보세요</h2>
+                <p class="hero-subtitle">매일 조금씩, 꾸준히 실천하며 목표를 달성하세요</p>
+            </div>
+        </section>
+
+        <!-- My Habits Section -->
+        <section class="habits-section" id="habits">
+            <div class="habits-container">
+                <div class="section-header">
+                    <h2 class="section-title">나의 습관목록</h2>
+                    <button class="btn-add-habit" id="addHabitBtn">+ 새 습관 추가</button>
+                </div>
+                
+                <div class="habits-grid" id="habitsGrid">
+                    <!-- Habit Card 1 -->
+                    <div class="habit-card">
+                        <div class="habit-card-header">
+                            <h3 class="habit-title">아침 물 마시기</h3>
+                            <button class="btn-edit">수정</button>
+                        </div>
+                        <div class="habit-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 75%"></div>
+                            </div>
+                            <span class="progress-text">15일 / 21일</span>
+                        </div>
+                        <div class="habit-stats">
+                            <div class="stat-item">
+                                <span class="stat-label">연속일</span>
+                                <span class="stat-value">7일</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">달성률</span>
+                                <span class="stat-value">71%</span>
+                            </div>
+                        </div>
+                        <div class="habit-actions">
+                            <button class="btn-check" data-habit="1">✓ 오늘 완료</button>
+                        </div>
+                    </div>
+
+                    <!-- Habit Card 2 -->
+                    <div class="habit-card">
+                        <div class="habit-card-header">
+                            <h3 class="habit-title">운동하기</h3>
+                            <button class="btn-edit">수정</button>
+                        </div>
+                        <div class="habit-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 60%"></div>
+                            </div>
+                            <span class="progress-text">12일 / 20일</span>
+                        </div>
+                        <div class="habit-stats">
+                            <div class="stat-item">
+                                <span class="stat-label">연속일</span>
+                                <span class="stat-value">5일</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">달성률</span>
+                                <span class="stat-value">60%</span>
+                            </div>
+                        </div>
+                        <div class="habit-actions">
+                            <button class="btn-check" data-habit="2">✓ 오늘 완료</button>
+                        </div>
+                    </div>
+
+                    <!-- Habit Card 3 -->
+                    <div class="habit-card">
+                        <div class="habit-card-header">
+                            <h3 class="habit-title">독서하기</h3>
+                            <button class="btn-edit">수정</button>
+                        </div>
+                        <div class="habit-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 90%"></div>
+                            </div>
+                            <span class="progress-text">18일 / 20일</span>
+                        </div>
+                        <div class="habit-stats">
+                            <div class="stat-item">
+                                <span class="stat-label">연속일</span>
+                                <span class="stat-value">12일</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">달성률</span>
+                                <span class="stat-value">90%</span>
+                            </div>
+                        </div>
+                        <div class="habit-actions">
+                            <button class="btn-check" data-habit="3">✓ 오늘 완료</button>
+                        </div>
+                    </div>
+
+                    <!-- Habit Card 4 -->
+                    <div class="habit-card">
+                        <div class="habit-card-header">
+                            <h3 class="habit-title">명상하기</h3>
+                            <button class="btn-edit">수정</button>
+                        </div>
+                        <div class="habit-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 45%"></div>
+                            </div>
+                            <span class="progress-text">9일 / 20일</span>
+                        </div>
+                        <div class="habit-stats">
+                            <div class="stat-item">
+                                <span class="stat-label">연속일</span>
+                                <span class="stat-value">3일</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">달성률</span>
+                                <span class="stat-value">45%</span>
+                            </div>
+                        </div>
+                        <div class="habit-actions">
+                            <button class="btn-check" data-habit="4">✓ 오늘 완료</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Ghost</h3>
+                    <p class="footer-description">나만의 습관을 만들고 지속하세요</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">서비스</h4>
+                    <ul class="footer-links">
+                        <li><a href="#habits">나의 습관</a></li>
+                        <li><a href="#statistics">통계</a></li>
+                        <li><a href="#community">커뮤니티</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">지원</h4>
+                    <ul class="footer-links">
+                        <li><a href="#help">도움말</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contact">문의하기</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">약관</h4>
+                    <ul class="footer-links">
+                        <li><a href="#terms">이용약관</a></li>
+                        <li><a href="#privacy">개인정보처리방침</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Ghost. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal-overlay" id="loginModal">
+        <div class="modal-content">
+            <button class="modal-close" id="closeLoginModal">&times;</button>
+            <h2>로그인</h2>
+            <form class="auth-form">
+                <input type="email" placeholder="이메일" required>
+                <input type="password" placeholder="비밀번호" required>
+                <button type="submit" class="btn-submit">로그인</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div class="modal-overlay" id="signupModal">
+        <div class="modal-content">
+            <button class="modal-close" id="closeSignupModal">&times;</button>
+            <h2>회원가입</h2>
+            <form class="auth-form">
+                <input type="text" placeholder="이름" required>
+                <input type="email" placeholder="이메일" required>
+                <input type="password" placeholder="비밀번호" required>
+                <input type="password" placeholder="비밀번호 확인" required>
+                <button type="submit" class="btn-submit">회원가입</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Add Habit Modal -->
+    <div class="modal-overlay" id="addHabitModal">
+        <div class="modal-content">
+            <button class="modal-close" id="closeAddHabitModal">&times;</button>
+            <h2>새 습관 추가</h2>
+            <form class="habit-form" id="habitForm">
+                <input type="text" placeholder="습관 이름" id="habitName" required>
+                <input type="number" placeholder="목표 일수 (예: 21일)" id="habitDays" min="1" required>
+                <textarea placeholder="습관 설명 (선택사항)" id="habitDescription"></textarea>
+                <button type="submit" class="btn-submit">습관 추가</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
